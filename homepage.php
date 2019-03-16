@@ -18,12 +18,67 @@
 <body>
 <div>
 
-    <div>
+    <div class="header-image">
      
         <img class="logo" src="images/school-box-logo-white.png">
-        <img class="header-image" src="images/hands-raised-sb-blue-cropped.jpg" height="350" width="100%">
 
         <div class="overlay">
+        </div>
+
+
+        <div style="text-align: center;">
+            <table border="1" class="header-table" align="center">
+                <tr height="20">
+                    <td>
+                        <div class="header-1" style="color: white;">
+                            WHITEPAPER
+                        </div>
+                    </td>
+                </tr>
+
+                <tr height="50">
+                    <td>
+                        <div class="header-2" style="color: white;">
+                            Woohoo!
+                        </div>
+                    </td>
+                </tr>
+
+                <tr height="70">
+                    <td>
+                        <div class="header-3" style="color: white;">
+                            Must-Have School Portal Features to Drive Community Engagement
+                        </div>
+                    </td>
+                </tr>
+
+                <tr height="70">
+                    <td>
+                        <div class="header-4" style="color: white;">
+                            <ul>
+                                <li>
+                                    Smartphones as learning tools
+                                </li>
+
+                                <li>
+                                    Mobile software for parent envolvement
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+
+            <table border="0" bgcolor="white" class="header-table-2" align="center" cellpadding="5" cellspacing="20">
+                <tr>
+                    <td width="180px">
+                        <div class="second-header-1" style="color: #0066B0;">
+                            Fill in the form and we’ll email you the download link
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
 
 
