@@ -16,7 +16,6 @@
 
 
 <body>
-<div>
 
     <div class="header-image">
      
@@ -27,7 +26,7 @@
 
 
         <div style="text-align: center;">
-            <table border="1" class="header-table" align="center">
+            <table border="0" class="header-table" align="center">
                 <tr height="20">
                     <td>
                         <div class="header-1" style="color: white;">
@@ -70,23 +69,125 @@
 
             </table>
 
-            <table border="0" bgcolor="white" class="header-table-2" align="center" cellpadding="5" cellspacing="20">
+            <table border="0" bgcolor="white" class="header-table-2" align="center" style="padding: 12px 20px;">
+
                 <tr>
-                    <td width="180px">
-                        <div class="second-header-1" style="color: #0066B0;">
+                    <td>
+                        <div class="form-main-header" style="color: #0066B0;">
                             Fill in the form and we’ll email you the download link
                         </div>
                     </td>
                 </tr>
+
+                <tr>
+                    <td style="padding-top: 8px;">
+                        <div class="form-question" style="color: #0066B0;">
+                            FIRST NAME
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="firstname" size="14" style="font-size: 20px;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 8px;">
+                        <div class="form-question" style="color: #0066B0;">
+                            LAST NAME YOU REPRESENT
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="lastname" size="14" style="font-size: 20px;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 8px;">
+                        <div class="form-question" style="color: #0066B0;">
+                            EMAIL
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="email" size="14" style="font-size: 20px;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 8px;">
+                        <div class="form-question" style="color: #0066B0;">
+                            CURRENT SIS
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="current" size="14" style="font-size: 20px;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 20px;">
+                        <button class="button-style">
+                            GET YOUR COPY NOW
+                        </button>
+                    </td>
+                </tr>
+
             </table>
         </div>
 
+    </div>
 
+    <div>
+        <table border="0" class="section-two-table" align="center">
+            <tr>
+                <td style="padding-top: 14px;">
+                    <div class="section-two-first-paragraph" style="color: #0066B0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec mattis arcu. Nulla facilisi. Suspendisse venenatis maximus lorem, a iaculis mauris maximus sed.
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 25px;">
+                    <div class="section-two-second-paragraph" style="color: #0066B0;">
+                        Maecenas non lorem venenatis, rutrum purus ut, euismod massa. Sed pretium, ante at eleifend blandit, arcu orci accumsan lacus, ac tristique tortor velit a nisi. Nam non ligula vitae arcu dictum posuere at nec augue. Etiam eget risus quam. Proin eget sapien velit. Ut pretium mollis nunc, id eleifend nulla semper vestibulum. Praesent finibus ipsum et massa convallis fermentum. Vestibulum at blandit lorem.
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 20px;">
+                    <div class="section-two-third-paragraph" style="color: #0066B0;">
+                        Heading 3
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding-top: 20px;">
+                    <div class="section-two-second-paragraph" style="color: #0066B0;">
+                        Porttitor sollicitudin neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis pharetra commodo. Fusce non arcu ac nisi elementum ullamcorper ut sit amet ligula. Curabitur euismod odio quis ante sodales, vitae egestas ex pellentesque. Sed pulvinar blandit feugiat. Nulla facilisi. Duis molestie consectetur aliquet. Curabitur egestas vestibulum sapien, vel vestibulum mi ultrices id. Nulla ultricies
+                    </div>
+                </td>
+            </tr>
+        
+        </table>
+    </div>
+
+    <div class="footer-image">
     </div>
 
 
-
-
-</div>
 </body>
 
