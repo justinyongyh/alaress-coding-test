@@ -14,9 +14,9 @@
 
 </head>
 
-
 <body>
 
+    <!-- Header -->
     <div class="header-image">
      
         <!-- Schoolbox Logo -->
@@ -26,6 +26,7 @@
         </div>
 
         <div class="align-center">
+
             <table border="0" class="header-table">
                 <tr height="20">
                     <td>
@@ -71,7 +72,6 @@
 
             <!-- Form table -->
             <table border="0" bgcolor="white" class="header-table-2" align="center" style="padding: 12px 20px;">
-
                 <tr>
                     <td>
                         <div class="form-main-header">
@@ -143,12 +143,12 @@
                         </button>
                     </td>
                 </tr>
-
             </table>
-        </div>
 
+        </div>
     </div>
 
+    <!-- Middle section -->
     <div>
         <table border="0" class="section-two-table" align="center">
             <tr>
@@ -186,6 +186,7 @@
         </table>
     </div>
 
+    <!-- Footer -->
     <div class="footer-image">
 
         <div class="footer-overlay">
@@ -220,9 +221,7 @@
             </table>
 
         </div>
-
     </div>
-
 
 </body>
 
