@@ -8,6 +8,6 @@ homepage.php - Main webpage
 
 homepage.css - Cascading Style Sheets (CSS file)
 
-fonts - Contain custom fonts
+fonts - Contains custom fonts
 
-images - Contain various background images
+images - Contains various background images
