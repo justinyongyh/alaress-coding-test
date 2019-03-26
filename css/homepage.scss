@@ -1,6 +1,42 @@
+$inputbackground: #E5F0F7;
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    /* Table styling */
+    .header-table {
+        position: relative;
+        top: 170px;
+        height: 330px;
+        width: 280px;
+        z-index: 2;
+        display: inline-block;
+    }
+
+    .header-table-2 {
+        position: relative;
+        margin-top: 180px;
+        height: 300px;
+        width: 210px;
+        z-index: 2;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .section-two-table {
+        position: relative;
+        margin-top: 30px;
+        height: 300px;
+        width: 270px;
+        margin-bottom: 100px;
+    }
+
+    .footer-email-table {
+        width: 200px;
+    }
+
+}
 
 /* Remove body margins */
-
 body { 
 	margin:0; 
 } 
@@ -12,7 +48,7 @@ table {
 }
 
 input {
-	background-color: #E5F0F7;
+	background-color: $inputbackground;
 	border: none;
 }
 
@@ -54,7 +90,7 @@ input {
 
 .logo {
 	position:absolute;
-	top: 60px;
+	top: 40px;
 	left: 45px;
 	z-index: 2;
 	width: 220px;
@@ -62,25 +98,34 @@ input {
 }
 
 .header-image {
-	background-image: url("images/hands-raised-sb-blue-cropped.jpg"); 
+	background-image: url("/images/hands-raised-sb-blue-cropped.jpg"); 
 	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
 	height: 350px;
-	width: 100%;
+    width: 100%;
+    z-index: -1;
+	display: flex;
+	align-items: center;
 }
 
 .footer-image {
-	background-image: url("images/learners-sunset.jpg"); 
-	background-repeat: no-repeat;
+	background-image: url("/images/learners-sunset.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
 	background-size: cover;
 	height: 550px;
-	width: 100%;
+    width: 100%;
+    z-index: -1;
+	display: flex;
+	align-items: center;
 }
 
 /* Table styling */
+/*
 .header-table {
 	position: relative;
-	margin-top: 100px;
+	margin-top: 180px;
 	height: 310px;
 	width: 390px;
 	z-index: 2;
@@ -89,9 +134,9 @@ input {
 
 .header-table-2 {
 	position: relative;
-	margin-top: 100px;
+	margin-top: 180px;
 	height: 300px;
-	width: 190px;
+	width: 230px;
 	z-index: 2;
 	display: inline-block;
 	margin-left: 20px;
@@ -114,6 +159,7 @@ input {
 	width: 270px;
 	margin-bottom: 100px;
 }
+*/
 
 /* Firefox CSS styles go here */
 @-moz-document url-prefix() {
@@ -182,12 +228,12 @@ input {
 /* Adding custom font */
 @font-face {
     font-family: opensansB;
-    src: url("fonts/OpenSans-Bold.ttf") format("truetype");
+    src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: opensansR;
-    src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+    src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 div .header-1 {
@@ -248,8 +294,10 @@ div .form-question {
 	color: #FFFFFF;
 	background-color: #00E38F;
 	border: none;
-	padding: 6px 28px;
-	font-size: 12px;
+	padding: 5.5px 28px;
+    font-size: 14px;
+    z-index: 2;
+    width: 130px;
 }
 
 div .section-two-first-paragraph {
@@ -278,6 +326,7 @@ div .footer-message {
     font-size: 18px;
     text-align: center;
     color: #FFFFFF;
+    z-index: 2;
 }
 
 div .footer-email {
@@ -285,6 +334,11 @@ div .footer-email {
     font-size: 8px;
     text-align: left;
     letter-spacing: 3px;
-    padding-bottom: 5px; 
+    padding-bottom: 4px; 
     color: #FFFFFF;
+    z-index: 2;
+}
+
+.footer-index {
+    z-index: 2;
 }
