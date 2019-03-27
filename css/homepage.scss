@@ -1,50 +1,297 @@
 $inputbackground: #E5F0F7;
+$overlayblue: #0080ff;
+$fontwhite: #FFFFFF;
+$fontblue: #0066B0;
+$buttonred: #FA4A47;
+$buttongreen: #00E38F;
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    /* Table styling */
+/* Adding custom font */
+@font-face {
+    font-family: opensansB;
+    src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: opensansR;
+    src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+// Smallest (landscape phones, 576px and below)
+@media (max-width: 576px) {
+
+	.header-image {
+		background-image: url("/images/hands-raised-sb-blue-cropped.jpg"); 
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		height: 800px;
+		width: 100%;
+		z-index: -1;
+		display: flex;
+		align-items: center;
+	}
+
+	.header-overlay {
+		opacity: 0.8;
+		position: absolute;
+		content:" ";
+		left:0;
+		width: 100%;
+		height: 800px;
+		display: block;
+		z-index: 0;
+		background-color: $overlayblue;
+	}
+	
     .header-table {
-        position: relative;
-        top: 170px;
-        height: 330px;
-        width: 280px;
+		position: relative;
         z-index: 2;
         display: inline-block;
-    }
-
-    .header-table-2 {
-        position: relative;
-        margin-top: 180px;
+		top: 60px;
         height: 300px;
-        width: 210px;
+		width: 280px;
+		
+	}
+    
+    .header-form-table {
+		position: relative;
         z-index: 2;
-        display: inline-block;
+		display: inline-block;
+        height: 380px;
+        width: 235px;
         margin-left: 20px;
     }
+	
+	.footer-email-table {
+		margin:0 auto;
+	}
 
-    .section-two-table {
-        position: relative;
-        margin-top: 30px;
-        height: 300px;
-        width: 270px;
-        margin-bottom: 100px;
-    }
-
-    .footer-email-table {
-        width: 200px;
-    }
+	.footer-sign-up-button {
+		text-align: center;
+	}
 
 }
 
-/* Remove body margins */
-body { 
-	margin:0; 
-} 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
 
-table {
+	.header-image {
+		background-image: url("/images/hands-raised-sb-blue-cropped.jpg"); 
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		height: 400px;
+		width: 100%;
+		z-index: -1;
+		display: flex;
+		align-items: center;
+	}
+
+	.header-overlay {
+		opacity: 0.8;
+		position: absolute;
+		content:" ";
+		left:0;
+		width: 100%;
+		height: 400px;
+		display: block;
+		z-index: 0;
+		background-color: $overlayblue;
+	}
+
+    .header-table {
+		position: relative;
+        z-index: 2;
+        display: inline-block;
+        top: 240px;
+        height: 330px;
+        width: 280px;
+    }
+    
+    .header-form-table {
+		position: relative;
+        z-index: 2;
+        display: inline-block;
+        margin-top: 230px;
+        height: 400px;
+        width: 235px;
+        margin-left: 20px;
+    }
+    
+	.footer-email-table {
+		margin:0 auto;
+	}
+
+	.footer-sign-up-button {
+		text-align: center;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+	.footer-email-table {
+		float: right;
+	}
+
+	.footer-sign-up-button {
+		margin-top: 10px;
+		text-align: left;
+	}
+
+	.sign-up-button-style {
+		margin-left: 40px;
+	}
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+	.footer-sign-up-button {
+		margin-left: 30px;
+	}
+
+}
+
+.logo {
+	position:absolute;
+	top: 40px;
+	left: 45px;
+	z-index: 2;
+	width: 220px;
+	height: 40px;
+}
+
+.section-two-table {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	margin-top: 30px;
+	height: 520px;
+	width: 270px;
+	margin-bottom: 140px;
+}
+
+.footer-image {
+	background-image: url("/images/learners-sunset.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+	height: 550px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    z-index: -1;
+	display: flex;
+	align-items: center;
+}
+
+.footer-overlay{
+	opacity: 0.8;
+	position: absolute;
+	content:" ";
+	left: 0;
+	width: 100%;
+	height: 550px;
+	display: block;
+	z-index: 0;
+	background-image: linear-gradient(to top right, #FF5E6A, #FF6E21);
+}
+
+div .font-bold {
+
+	font-family: opensansB;
+
+	.header-text-section-1 {
+		font-size: 10px;
+		letter-spacing: 5px; 
+		text-align: left;
+		color: $fontwhite;
+	}
+	
+	.header-text-section-2 {
+		font-size: 22px;
+		text-align: left;
+		color: $fontwhite;
+	}
+
+	.form-main-header {
+		font-size: 14px;
+		text-align: left;
+		width: 140px;
+		color: $fontblue;
+	}
+
+	.form-question {
+		font-size: 8px;
+		text-align: left;
+		letter-spacing: 3px;
+		color: $fontblue;
+	}
+
+	.section-two-first-paragraph {
+		font-size: 18px;
+		text-align: left;
+		color: $fontblue;
+	}
+		
+	.section-two-third-paragraph {
+		font-size: 12px;
+		text-align: left;
+		color: $fontblue;
+	}
+
+	.get-your-copy-button-style {
+		color: $fontwhite;
+		background-color: $buttonred;
+		border: none;
+		padding: 12px 16px;
+		font-size: 12px;
+	}
+	
+	.sign-up-button-style {
+		color: $fontwhite;
+		background-color: $buttongreen;
+		border: none;
+		margin-top: 8px;
+		padding: 5.5px 28px;
+		font-size: 14px;
+		z-index: 2;
+		width: 130px;
+	}
+		
+	.footer-message {
+		font-size: 18px;
+		text-align: center;
+		color: $fontwhite;
+		z-index: 2;
+	}
+	
+	.footer-email {
+		font-size: 8px;
+		text-align: left;
+		letter-spacing: 3px;
+		padding-bottom: 4px; 
+		color: $fontwhite;
+		z-index: 2;
+	}
+
+}
+
+div .font-regular {
+
+	font-family: opensansR;
+	text-align: left;
+
+	.header-text-bullet-point {
+		font-size: 12px;
+		color: $fontwhite;
+	}
+
+	.section-two-second-paragraph {
+		font-size: 12px;
+		color: $fontblue;
+	}
+
 }
 
 input {
@@ -53,7 +300,7 @@ input {
 }
 
 .align-center {
-	text-align: center;;
+	text-align: center;
 }
 
 .padding-top-8 {
@@ -86,259 +333,4 @@ input {
 
 .font-20 {
 	font-size: 20px;
-}
-
-.logo {
-	position:absolute;
-	top: 40px;
-	left: 45px;
-	z-index: 2;
-	width: 220px;
-	height: 40px;
-}
-
-.header-image {
-	background-image: url("/images/hands-raised-sb-blue-cropped.jpg"); 
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	height: 350px;
-    width: 100%;
-    z-index: -1;
-	display: flex;
-	align-items: center;
-}
-
-.footer-image {
-	background-image: url("/images/learners-sunset.jpg"); 
-    background-repeat: no-repeat;
-    background-position: center center;
-	background-size: cover;
-	height: 550px;
-    width: 100%;
-    z-index: -1;
-	display: flex;
-	align-items: center;
-}
-
-/* Table styling */
-/*
-.header-table {
-	position: relative;
-	margin-top: 180px;
-	height: 310px;
-	width: 390px;
-	z-index: 2;
-	display: inline-block;
-}
-
-.header-table-2 {
-	position: relative;
-	margin-top: 180px;
-	height: 300px;
-	width: 230px;
-	z-index: 2;
-	display: inline-block;
-	margin-left: 20px;
-}
-
-.footer-table {
-	position: relative;
-	margin-top: 150px;
-	height: 200px;
-	width: 350px;
-	z-index: 2;
-	display: inline-block;
-}
-
-.section-two-table {
-	position: relative;
-	right: 190px;
-	margin-top: 30px;
-	height: 300px;
-	width: 270px;
-	margin-bottom: 100px;
-}
-*/
-
-/* Firefox CSS styles go here */
-@-moz-document url-prefix() {
-  .header-table-2 {
-		position: relative;
-		margin-top: 100px;
-		height: 300px;
-		width: 220px;
-		z-index: 2;
-		display: inline-block;
-		margin-left: 20px;
-	}
-}
-
-/* IE10+ CSS styles go here */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-
-.header-table {
-	position: relative;
-	margin-left : -30px;
-	margin-top: 100px;
-	height: 310px;
-	width: 390px;
-	z-index: 2;
-	display: inline-block;
-}
-
-.header-table-2 {
-	position: relative;
-	margin-top: -350px;
-	height: 300px;
-	width: 220px;
-	z-index: 2;
-	display: inline-block;
-	margin-left: 20px;
-	}
-}
-
-/* Overlay effect */
-.header-overlay{
-	opacity: 0.8;
-  	position: absolute;
-  	content:" ";
-  	left:0;
-  	width: 100%;
-  	height: 350px;
-  	display: block;
-  	z-index: 1;
-	background-color: #0080ff;
-}
-
-.footer-overlay{
-	opacity: 0.8;
-	position: absolute;
-  	content:" ";
-  	top: 10;
-  	left: 0;
-  	width: 100%;
-  	height: 550px;
-  	display: block;
-  	z-index: 1;
-  	background-image: linear-gradient(to top right, #FF5E6A, #FF6E21);
-}
-
-
-/* Adding custom font */
-@font-face {
-    font-family: opensansB;
-    src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: opensansR;
-    src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
-}
-
-div .header-1 {
-    font-family: opensansB;
-    font-size: 10px;
-    letter-spacing: 5px; 
-    text-align: left;
-    color: #FFFFFF;
-}
-
-div .header-2 {
-    font-family: opensansB;
-    font-size: 22px;
-    text-align: left;
-    color: #FFFFFF;
-}
- 
-div .header-3 {
-    font-family: opensansB;
-    font-size: 22px;
-    text-align: left;
-    color: #FFFFFF;
-}
-
-div .header-4 {
-    font-family: opensansR;
-    font-size: 12px;
-    text-align: left;
-    color: #FFFFFF;
-}
-
-div .form-main-header {
-	font-family: opensansB;
-    font-size: 14px;
-    text-align: left;
-    width: 140px;
-    color: #0066B0;
-}
-
-div .form-question {
-	font-family: opensansB;
-    font-size: 8px;
-    text-align: left;
-    letter-spacing: 3px;
-    color: #0066B0;
-}
-
-.get-your-copy-button-style {
-	font-family: opensansB;
-	color: #FFFFFF;
-	background-color: #FA4A47;
-	border: none;
-	padding: 12px 16px;
-}
-
-.sign-up-button-style {
-	font-family: opensansB;
-	color: #FFFFFF;
-	background-color: #00E38F;
-	border: none;
-	padding: 5.5px 28px;
-    font-size: 14px;
-    z-index: 2;
-    width: 130px;
-}
-
-div .section-two-first-paragraph {
-	font-family: opensansB;
-    font-size: 18px;
-    text-align: left;
-    color: #0066B0;
-}
-
-div .section-two-second-paragraph {
-	font-family: opensansR;
-    font-size: 12px;
-    text-align: left;
-    color: #0066B0;
-}
-
-div .section-two-third-paragraph {
-	font-family: opensansB;
-    font-size: 12px;
-    text-align: left;
-    color: #0066B0;
-}
-
-div .footer-message {
-	font-family: opensansB;
-    font-size: 18px;
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 2;
-}
-
-div .footer-email {
-	font-family: opensansB;
-    font-size: 8px;
-    text-align: left;
-    letter-spacing: 3px;
-    padding-bottom: 4px; 
-    color: #FFFFFF;
-    z-index: 2;
-}
-
-.footer-index {
-    z-index: 2;
 }
