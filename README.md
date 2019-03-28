@@ -13,3 +13,9 @@ homepage.css - Cascading Style Sheets (CSS file)
 fonts - Contains custom fonts
 
 images - Contains various background images
+
+# alaress-coding-test version 2
+
+Added Bootstrap framework to code.
+
+Added SASS framework for CSS.
